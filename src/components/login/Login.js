@@ -45,7 +45,7 @@ function Login() {
                                onChange={(e) => setPassword(e.target.value)}/>
                     </FormGroup>
                     {errorMsg ? (<span className={'text-danger mb-2'}>{errorMsg}</span>) : ""}
-                    <FormGroup className={'d-flex justify-content-center align-items-center'}>
+                    <FormGroup className={'d-flex justify-content-center align-items-center mt-3'}>
                        <Button className={'mr-3'} color="primary" onClick={() => fnLogin(emailId, password)}>Submit</Button>
                        <Button color="secondary" onClick={() => {setEmailId("");setPassword("");setErrorMessage("")}}>Clear</Button>
                     </FormGroup>

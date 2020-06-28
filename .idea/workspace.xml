@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de17d09b-10a8-431a-9045-67dc87fa0959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/react-todo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todos/add-todos/addtodos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/Routing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/firebase/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/firebase/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/firebase/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api/api.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,8 +56,9 @@
         <counts>
           <entry key="css" value="41" />
           <entry key="html" value="4" />
-          <entry key="js" value="2528" />
+          <entry key="js" value="2914" />
           <entry key="json" value="1" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -83,7 +66,8 @@
           <entry key="CSS" value="41" />
           <entry key="HTML" value="4" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="2528" />
+          <entry key="JavaScript" value="2914" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -102,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="49" column="113" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="113" />
+            <state relative-caret-position="267">
+              <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -114,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="34">
+              <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
               </folding>
@@ -129,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="297">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -147,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/api/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="189">
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -211,6 +195,7 @@
       <find>text-danger</find>
       <find>color</find>
       <find>signInWithEmailAndPassword</find>
+      <find>fnFetchTodo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,11 +218,11 @@
         <option value="$PROJECT_DIR$/src/components/add-todo-component/addtodos.css" />
         <option value="$PROJECT_DIR$/src/services/firebase/index.js" />
         <option value="$PROJECT_DIR$/src/components/add-todo-component/AddTodos.js" />
+        <option value="$PROJECT_DIR$/src/services/firebase/auth.js" />
+        <option value="$PROJECT_DIR$/src/components/login/Login.js" />
         <option value="$PROJECT_DIR$/src/services/api/api.js" />
         <option value="$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js" />
         <option value="$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js" />
-        <option value="$PROJECT_DIR$/src/services/firebase/auth.js" />
-        <option value="$PROJECT_DIR$/src/components/login/Login.js" />
       </list>
     </option>
   </component>
@@ -429,17 +414,25 @@
       <updated>1593283232577</updated>
       <workItem from="1593283234075" duration="941000" />
       <workItem from="1593320087853" duration="3868000" />
-      <workItem from="1593323992764" duration="25158000" />
+      <workItem from="1593323992764" duration="28510000" />
     </task>
+    <task id="LOCAL-00001" summary="- commit">
+      <created>1593353677125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593353677125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29967000" />
+    <option name="totallyTimeSpent" value="33319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1760973" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1760973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -491,6 +484,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="- commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/login/login.scss" />
@@ -613,30 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/firebase/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -644,12 +617,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="49" column="113" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="113" />
+        <state relative-caret-position="267">
+          <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/todos/display-todos/DisplayTodos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/todos/add-todos/AddTodos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,12 +1,14 @@
 import React, {Fragment, useCallback, useEffect, useState} from 'react';
 import './addtodos.css';
 import {Button, Form, FormGroup, Input} from "reactstrap";
-import {addTodos, deleteTodos, fetchTodos} from "../../../services/api/api";
+import {addTodos, deleteTodos, fetchTodos, updateTodos} from "../../../services/api/api";
 import DisplayTodos from "../display-todos/DisplayTodos";
 
 function AddTodos() {
     const [todos, setTodo] = useState({});
     const [addTodo, setTodos] = useState("");
+    const [todoid, setTodoId] = useState("");
+    const [isEditMode, setEditMode] = useState(false);
     const [isLoaded, setLoader] = useState(false);
     useEffect(() => {
         fetchTodos().then((response) => {
@@ -23,12 +25,30 @@ function AddTodos() {
             setTodos("");
         });
     }, []);
-    const fnDeleteTodo = useCallback((id) => {
+    const fnDeleteTodo = useCallback((e, id) => {
+        e.preventDefault();
+        e.stopPropagation();
         deleteTodos(id);
         fetchTodos().then((response) => {
             setTodo(response);
         });
     }, []);
+
+    const fnFetchTodo = useCallback((id, data) => {
+        setEditMode(true);
+        setTodoId(id);
+        setTodos(data);
+    }, []);
+
+    const fnUpdateTodo = useCallback((id, data) => {
+        updateTodos(id, data);
+        fetchTodos().then((response) => {
+            setTodo(response);
+            setEditMode(false);
+            setTodos("");
+        });
+    }, []);
+
     return (
         <Fragment>
             <div className={'w-75 m-auto'}>
@@ -42,13 +62,17 @@ function AddTodos() {
                                    onChange={(e) => setTodos(e.target.value)}/>
                         </FormGroup>
                         <FormGroup className={'d-flex justify-content-center align-items-center'}>
-                            <Button className={'ml-3'} color="primary" onClick={() => fnAddTodo(addTodo)}>Add</Button>
+                            <Button className={'ml-3'} color="primary" onClick={() => {
+                                isEditMode ? fnUpdateTodo(todoid, addTodo) : fnAddTodo(addTodo);
+                            }}>
+                                {isEditMode ? 'Update' : 'Add'}</Button>
                         </FormGroup>
                     </Form>
                 </div>
                 <div>
                     <DisplayTodos
                         todos={todos}
+                        fnFetchTodo={fnFetchTodo}
                         fnDeleteTodo={fnDeleteTodo}
                         isLoaded={isLoaded}/>
                 </div>
