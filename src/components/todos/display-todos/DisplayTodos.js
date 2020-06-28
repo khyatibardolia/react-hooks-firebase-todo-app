@@ -1,13 +1,13 @@
 import React, {Fragment} from 'react';
 
 const DisplayTodos = (props) => {
-    const {todos, fnFetchTodo, fnDeleteTodo, isLoaded} = props;
+    const {todos, fnUpdateTodo, fnDeleteTodo, isLoaded} = props;
     return (
         <Fragment>
             {isLoaded ?
                 <ul id="myUL">
                     {Object.keys(todos).length ? Object.keys(todos).map((keyName, index) => (
-                        <li key={index} onClick={() => fnFetchTodo(keyName, todos[keyName].data)}>
+                        <li key={index} onClick={() => fnUpdateTodo(keyName, todos[keyName].data)}>
                             {todos[keyName].data}<span>
                         <i className="fa fa-trash text-danger text-center close" aria-hidden="true"
                            onClick={(e) => fnDeleteTodo(e, keyName, todos[keyName].data)}/></span></li>

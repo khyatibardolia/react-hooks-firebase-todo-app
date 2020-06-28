@@ -34,19 +34,18 @@ function AddTodos() {
         });
     }, []);
 
-    const fnFetchTodo = useCallback((id, data) => {
+    const fnUpdateTodo = useCallback((id, data, editTodo) => {
         setEditMode(true);
         setTodoId(id);
         setTodos(data);
-    }, []);
-
-    const fnUpdateTodo = useCallback((id, data) => {
-        updateTodos(id, data);
-        fetchTodos().then((response) => {
-            setTodo(response);
-            setEditMode(false);
-            setTodos("");
-        });
+        if (editTodo) {
+            updateTodos(id, data);
+            fetchTodos().then((response) => {
+                setTodo(response);
+                setEditMode(false);
+                setTodos("");
+            });
+        }
     }, []);
 
     return (
@@ -63,7 +62,7 @@ function AddTodos() {
                         </FormGroup>
                         <FormGroup className={'d-flex justify-content-center align-items-center'}>
                             <Button className={'ml-3'} color="primary" onClick={() => {
-                                isEditMode ? fnUpdateTodo(todoid, addTodo) : fnAddTodo(addTodo);
+                                isEditMode ? fnUpdateTodo(todoid, addTodo, true) : fnAddTodo(addTodo);
                             }}>
                                 {isEditMode ? 'Update' : 'Add'}</Button>
                         </FormGroup>
@@ -72,7 +71,7 @@ function AddTodos() {
                 <div>
                     <DisplayTodos
                         todos={todos}
-                        fnFetchTodo={fnFetchTodo}
+                        fnUpdateTodo={fnUpdateTodo}
                         fnDeleteTodo={fnDeleteTodo}
                         isLoaded={isLoaded}/>
                 </div>
