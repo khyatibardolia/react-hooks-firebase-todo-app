@@ -24,16 +24,17 @@ function Login() {
         });
     }, [history]);
     return (
-        <div className="login">
+      <div className={'login-bg w-100 h-100'}>
+        <div className="login my-0 w-50 h-100 d-flex justify-content-center align-items-center flex-column">
             <div className="login-triangle"/>
-            <h2 className="login-header">Log in</h2>
-                <Form className="login-container" noValidate validated={validated}>
+            <h2 className="login-header w-100">Log in</h2>
+                <Form className="login-container w-100" noValidate validated={validated}>
                     <FormGroup>
                         <Label for="exampleEmail">Email Id</Label>
                         <Input type={"email"}
                                className={`${errorMsg ? 'is-invalid' : 'is-valid'}`}
                                value={emailId}
-                               placeholder="Enter email address"
+                               placeholder="testuser@gmail.com"
                                onChange={(e) => setEmailId(e.target.value)} />
                     </FormGroup>
                     <FormGroup>
@@ -41,7 +42,7 @@ function Login() {
                         <Input type={"password"}
                                className={`${errorMsg ? 'is-invalid' : 'is-valid'}`}
                                value={password}
-                               placeholder="Enter password"
+                               placeholder="test123"
                                onChange={(e) => setPassword(e.target.value)}/>
                     </FormGroup>
                     {errorMsg ? (<span className={'text-danger mb-2'}>{errorMsg}</span>) : ""}
@@ -51,6 +52,7 @@ function Login() {
                     </FormGroup>
                 </Form>
         </div>
+      </div>
     );
 }
 export default Login;

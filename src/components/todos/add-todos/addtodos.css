@@ -112,3 +112,8 @@ ul li.checked::before {
 .addBtn:hover {
     background-color: #bbb;
 }*/
+.todolist-bg-img {
+    background-image: url("../../../assets/images/todo-app-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

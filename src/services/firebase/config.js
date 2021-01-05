@@ -1,14 +1,14 @@
 import * as firebase from 'firebase';
 
 let config = {
-    apiKey: "AIzaSyBsiLVnxA6ScDfx54BIqAfCJNFsgzAvAuI",
-    authDomain: "reacthooks-todoapp.firebaseapp.com",
-    databaseURL: "https://reacthooks-todoapp.firebaseio.com",
-    projectId: "reacthooks-todoapp",
-    storageBucket: "reacthooks-todoapp.appspot.com",
-    messagingSenderId: "116704529811",
-    appId: "1:116704529811:web:dc72bc9a7a3a6e9622ec66",
-    measurementId: "G-QHEN4LEE36"
+  apiKey: "AIzaSyBhChoba0eTUZZpScCct_9lLSh6TQnbzoE",
+  authDomain: "react-todo-app-4a094.firebaseapp.com",
+  databaseURL: "https://react-todo-app-4a094-default-rtdb.firebaseio.com",
+  projectId: "react-todo-app-4a094",
+  storageBucket: "react-todo-app-4a094.appspot.com",
+  messagingSenderId: "840279680216",
+  appId: "1:840279680216:web:c58cd44b5663ef5dfce3ad",
+  measurementId: "G-ZZBLBMJCQP"
 };
 firebase.initializeApp(config);
 
